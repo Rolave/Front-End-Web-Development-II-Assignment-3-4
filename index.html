@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dollar converter</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>US Dollar to Canadian Dollar.</h1>
+              <h2>Convert USD to CAD at the real exchange rate</h2>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <form action="" class="convert-form" id="convert-form">
+              <div class="row">
+                <div class="col">
+                  <div class="field-item">
+                    <label for="amount" class="field-item__label">Amount</label>
+                    <div class="field-item__input">
+                      <input
+                        type="text"
+                        name="amount"
+                        id="amount"
+                        data-currency="USD"
+                        value="0.00"
+                      />
+                      <button type="button">
+                        <span class="flag flag--us"></span>
+                        <span class="button-currency">USD</span>
+                      </button>
+                    </div>
+                    <p class="amount-error" id="amount-error">
+                      Please enter a valid amount!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <button type="button" class="switch" id="switch">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="#60DAFB"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="m16.629 11.999-1.2-1.2 3.085-3.086H2.572V5.999h15.942L15.43 2.913l1.2-1.2 4.543 4.543a.829.829 0 0 1 0 1.2l-4.543 4.543Zm-9.257-.001 1.2 1.2-3.086 3.086h15.943v1.714H5.486l3.086 3.086-1.2 1.2-4.543-4.543a.829.829 0 0 1 0-1.2l4.543-4.543Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="col">
+                  <div class="field-item">
+                    <label for="converted-amount" class="field-item__label"
+                      >Converted to</label
+                    >
+                    <div class="field-item__input">
+                      <input
+                        type="text"
+                        name="converted-amount"
+                        id="converted-amount"
+                        data-currency="CAD"
+                        value="0.00"
+                        readonly
+                      />
+                      <button type="button">
+                        <span class="flag flag--ca"></span>
+                        <span class="button-currency">CAD</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col d-flex justify-content-center">
+                  <button type="submit" class="convert-button">Convert</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
